@@ -62,8 +62,8 @@ meanNames <- matchcols(combinedDataset, with=c("mean()"), method="and")
 # stdName is the new vector variable that will be populated with column names that have 'std' in their name
 stdNames <- matchcols(combinedDataset, with=c("std()"), method="and")
 
-# Combine meanName and stName into one vector called meanAndStd
-meanAndStd <- c(meanNames, stdNames)
+# Combine meanName and stName into one vector called meanAndStd and also add activityID and subject columns
+meanAndStd <- c(meanNames, stdNames, "activityID", "subject")
 
 # Following command will filter combinedDataset into a new data frame called meanAndStdData
 meanAndStdData <- combinedDataset[, meanAndStd]
