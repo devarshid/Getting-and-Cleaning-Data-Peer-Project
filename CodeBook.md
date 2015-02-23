@@ -38,7 +38,7 @@ meanName is the new vector variable that will be populated with column names tha
 
 stdName is the new vector variable that will be populated with column names that have 'std' in their name
 
-Combine meanName and stName into one vector called meanAndStd
+Combine meanName and stName into one vector called meanAndStd and also add activity and subject columns
 
 Filter combinedDataset based on meanAndStd vector into a new data frame called meanAndStdData
 
