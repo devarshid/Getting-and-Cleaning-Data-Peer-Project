@@ -42,3 +42,4 @@ Combine meanName and stName into one vector called meanAndStd and also add activ
 
 Filter combinedDataset based on meanAndStd vector into a new data frame called meanAndStdData
 
+finalFile.txt is the final result. The first three columns identify activity and the subject. Group.1 column is the activityID, Group.2 is the subject, and Group.3 is the activity description.
