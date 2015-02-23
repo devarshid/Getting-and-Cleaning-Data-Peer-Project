@@ -71,5 +71,6 @@ meanAndStdData <- combinedDataset[, meanAndStd]
 # Final clean data frame
 Final <- aggregate(meanAndStdData[,1:79], by =list(meanAndStdData[,80], meanAndStdData[,81], meanAndStdData[,82]), FUN = mean, na.rm = TRUE)
 
-# finalFile is the final result. The first three columns identify activity and the subject. Group.1 column is the activityID, Group.2 is the subject, and Group.3 is the activity description.
+# finalFile is the final result. The first three columns identify activity and the subject. Group.1 column is the activityID, 
+# Group.2 is the subject, and Group.3 is the activity description.
 finalFile <- write.table(Final, file="finalFile.txt", row.name=FALSE)
