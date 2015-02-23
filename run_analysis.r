@@ -68,3 +68,5 @@ meanAndStd <- c(meanNames, stdNames, "activityID", "subject")
 # Following command will filter combinedDataset into a new data frame called meanAndStdData
 meanAndStdData <- combinedDataset[, meanAndStd]
 
+# Final clean data frame
+Final <- aggregate(meanAndStdData[,1:79], by =list(meanAndStdData[,80], meanAndStdData[,81]), FUN = mean, na.rm = TRUE)
